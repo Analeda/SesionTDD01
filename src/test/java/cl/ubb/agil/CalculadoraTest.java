@@ -25,4 +25,11 @@ public class CalculadoraTest {
 		int r=calculadora.resta(200,73);
 		assertThat(r,is(127));
 	}
+	
+	@Test
+	public void DivisionDoceYtresEsCuatro(){
+		Calculadora calculadora=new Calculadora();
+		int r=calculadora.division(12,3);
+		assertThat(r,is(4));
+	}
 }
