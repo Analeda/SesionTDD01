@@ -12,5 +12,10 @@ public class CalculadoraTest {
 		assertThat(r,is(5));
 	}
 	
-	
+	@Test
+	public void sumaMenosUnoMasSiete(){
+		Calculadora calculadora=new Calculadora();
+		int r=calculadora.suma(-1,7);
+		assertThat(r,is(6));
+	}
 }
