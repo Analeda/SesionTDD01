@@ -18,4 +18,11 @@ public class CalculadoraTest {
 		int r=calculadora.suma(-1,7);
 		assertThat(r,is(6));
 	}
+	
+	@Test
+	public void restaDocientosMenosSetentaYTres(){
+		Calculadora calculadora=new Calculadora();
+		int r=calculadora.resta(200,73);
+		assertThat(r,is(127));
+	}
 }
